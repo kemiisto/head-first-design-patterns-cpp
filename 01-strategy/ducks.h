@@ -1,6 +1,8 @@
 #ifndef HEAD_FIRST_DESIGN_PATTERNS_CPP_DUCKS_H
 #define HEAD_FIRST_DESIGN_PATTERNS_CPP_DUCKS_H
 
+#include <memory>
+
 #include "fly_behaviors.h"
 #include "quack_behaviors.h"
 
