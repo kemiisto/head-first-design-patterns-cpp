@@ -5,13 +5,13 @@
 
 class Observer {
 public:
-    explicit Observer(WeatherData* weatherData) : weatherData(weatherData) {
-        weatherData->registerObserver(this);
+    explicit Observer(WeatherData& weatherData) : weatherData(weatherData) {
+        weatherData.registerObserver(this);
     }
     virtual ~Observer() = default;
     virtual void update(float newTemperature, float newHumidity, float newPressure) = 0;
 private:
-    WeatherData* weatherData;
+    WeatherData& weatherData;
 };
 
 #endif // HEAD_FIRST_DESIGN_PATTERNS_CPP_OBSERVER_H

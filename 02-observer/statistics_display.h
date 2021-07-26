@@ -6,7 +6,7 @@
 
 class StatisticsDisplay final : public Observer, public DisplayElement {
 public:
-    explicit StatisticsDisplay(WeatherData* weatherData) :
+    explicit StatisticsDisplay(WeatherData& weatherData) :
         Observer(weatherData), DisplayElement() {}
 
     void update(float newTemperature, float newHumidity, float newPressure) override {

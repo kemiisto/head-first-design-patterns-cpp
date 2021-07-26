@@ -6,7 +6,7 @@
 
 class CurrentConditionsDisplay final : public Observer, public DisplayElement {
 public:
-    explicit CurrentConditionsDisplay(WeatherData* weatherData) :
+    explicit CurrentConditionsDisplay(WeatherData& weatherData) :
         Observer(weatherData), DisplayElement() {}
 
     void update(float newTemperature, float newHumidity, float newPressure) override {

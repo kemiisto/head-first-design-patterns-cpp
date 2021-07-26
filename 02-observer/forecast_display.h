@@ -6,7 +6,7 @@
 
 class ForecastDisplay final : public Observer, public DisplayElement {
 public:
-    explicit ForecastDisplay(WeatherData* weatherData) :
+    explicit ForecastDisplay(WeatherData& weatherData) :
         Observer(weatherData), DisplayElement() {}
 
     void update(float newTemperature, float newHumidity, float newPressure) override {
