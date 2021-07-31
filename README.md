@@ -2,6 +2,10 @@
 
 Examples from the [Head First Design Patterns, 2nd ed.](https://www.oreilly.com/library/view/head-first-design/9781492077992/) using C++20 instead of Java.
 
+[Design Principles](design_principles.md)
+
+[Design Patterns](design_patterns.md)
+
 ## Notes on C++ implementation
 
 ### 1. Strategy
