@@ -4,10 +4,12 @@
 #include <memory>
 #include "beverages.h"
 
-template<typename T>
+template <class T>
+    concept Decorator = std::is_base_of<Beverage, T>::value && std::is_default_constructible<T>::value;
+
+template<Decorator T>
 class CondimentDecorator : T {
 public:
-    static_assert(std::is_base_of<Beverage, T>::value, "Template argument must be a Beverage");
     CondimentDecorator(std::string description, double cost) :
         T(), description(std::move(description)), cost(cost) {}
     ~CondimentDecorator() override = default;
