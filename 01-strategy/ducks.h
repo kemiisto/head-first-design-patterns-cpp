@@ -33,7 +33,7 @@ public:
     }
 
     void swim() {
-        std::cout << "All ducks float, even decoys!" << std::endl;
+        std::cout << "All ducks float, even decoys!" << '\n';
     }
 
 private:
@@ -46,7 +46,7 @@ public:
     MallardDuck() : Duck(std::make_unique<FlyWithWings>(), std::make_unique<Quack>()) {}
 
     void display() override {
-        std::cout << "I'm a real Mallard duck" << std::endl;
+        std::cout << "I'm a real Mallard duck" << '\n';
     }
 };
 
@@ -55,7 +55,7 @@ public:
     ModelDuck() : Duck(std::make_unique<FlyNoWay>(), std::make_unique<Quack>()) {}
 
     void display() override {
-        std::cout << "I'm a model duck" << std::endl;
+        std::cout << "I'm a model duck" << '\n';
     }
 };
 
@@ -64,7 +64,7 @@ public:
     DecoyDuck() : Duck(std::make_unique<FlyNoWay>(), std::make_unique<MuteQuack>()) {}
 
     void display() override {
-        std::cout << "I'm a duck Decoy" << std::endl;
+        std::cout << "I'm a duck Decoy" << '\n';
     }
 };
 
@@ -73,7 +73,7 @@ public:
     RubberDuck() : Duck(std::make_unique<FlyNoWay>(), std::make_unique<Squeak>()) {}
 
     void display() override {
-        std::cout << "I'm a rubber duckie" << std::endl;
+        std::cout << "I'm a rubber duckie" << '\n';
     }
 };
 

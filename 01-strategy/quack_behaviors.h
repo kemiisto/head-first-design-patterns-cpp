@@ -8,19 +8,19 @@ struct QuackBehavior {
 
 struct Quack : public QuackBehavior {
     void quack() override {
-        std::cout << "Quack" << std::endl;
+        std::cout << "Quack" << '\n';
     }
 };
 
 struct Squeak : public QuackBehavior {
     void quack() override {
-        std::cout << "Squeak" << std::endl;
+        std::cout << "Squeak" << '\n';
     }
 };
 
 struct MuteQuack : public QuackBehavior {
     void quack() override {
-        std::cout << "<< Silence >>" << std::endl;
+        std::cout << "<< Silence >>" << '\n';
     }
 };
 

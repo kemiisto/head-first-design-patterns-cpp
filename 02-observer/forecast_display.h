@@ -24,7 +24,7 @@ public:
         } else if (currentPressure < lastPressure) {
             std::cout << "Watch out for cooler, rainy weather";
         }
-        std::cout << std::endl;
+        std::cout << '\n';
     }
 private:
     float currentPressure = 29.92f;

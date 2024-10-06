@@ -18,16 +18,16 @@ public:
         return name;
     }
     void prepare() {
-        std::cout << "Preparing " << name << std::endl;
+        std::cout << "Preparing " << name << '\n';
     }
     void bake() {
-        std::cout << "Baking " << name << std::endl;
+        std::cout << "Baking " << name << '\n';
     }
     void cut() {
-        std::cout << "Cutting " << name << std::endl;
+        std::cout << "Cutting " << name << '\n';
     }
     void box() {
-        std::cout << "Boxing " << name << std::endl;
+        std::cout << "Boxing " << name << '\n';
     }
     friend std::ostream& operator<<(std::ostream& os, const Pizza& pizza);
 private:

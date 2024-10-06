@@ -17,7 +17,7 @@ public:
 
     void display() override {
         std::cout << "Current conditions: " << temperature
-            << "F degrees and " << humidity << "% humidity" << std::endl;
+            << "F degrees and " << humidity << "% humidity" << '\n';
     }
 private:
     float temperature = 0.0f;

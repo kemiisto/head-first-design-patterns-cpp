@@ -35,7 +35,7 @@ public:
     }
 
     void swim() {
-        std::cout << "All ducks float, even decoys!" << std::endl;
+        std::cout << "All ducks float, even decoys!" << '\n';
     }
 
 private:

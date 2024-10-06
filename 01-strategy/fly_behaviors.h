@@ -8,19 +8,19 @@ struct FlyBehavior {
 
 struct FlyNoWay : public FlyBehavior {
     void fly() override {
-        std::cout << "I can't fly" << std::endl;
+        std::cout << "I can't fly" << '\n';
     }
 };
 
 struct FlyRocketPowered : public FlyBehavior {
     void fly() override {
-        std::cout << "I'm flying with a rocket" << std::endl;
+        std::cout << "I'm flying with a rocket" << '\n';
     }
 };
 
 struct FlyWithWings : public FlyBehavior {
     void fly() override {
-        std::cout << "I'm flying!!" << std::endl;
+        std::cout << "I'm flying!!" << '\n';
     }
 };
 

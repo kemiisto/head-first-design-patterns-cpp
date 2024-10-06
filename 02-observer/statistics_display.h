@@ -26,7 +26,7 @@ public:
 
     void display() override {
         std::cout << "Avg/Max/Min temperature = " <<
-            (tempSum / numReadings) << "/" << maxTemp << "/" << minTemp << std::endl;
+            (tempSum / numReadings) << "/" << maxTemp << "/" << minTemp << '\n';
     }
 private:
     float maxTemp = 0.0f;
